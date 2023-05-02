@@ -6,13 +6,13 @@ const PORT = 4000;
 
 
 const handleHome = (request, response) => {
-    return response.send("I still love you");
+    return response.send("<h1>I still love you</h1>");
  
     //return response.end();
 };
 
 const handleLogin = (req, res) => {
-    return res.send ("Login here");
+    return res.send ({message: "Login here"});
 }
 
 app.get("/", handleHome);
