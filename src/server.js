@@ -10,7 +10,6 @@ const login = (req, res) => {
     return res.send("login");
 }
 const home = (req, res) => {
-    console.log("I will respond");
     return res.send("hello");
 };
 
