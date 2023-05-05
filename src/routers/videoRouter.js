@@ -1,11 +1,10 @@
 import  express from "express";
+import { watch, edit } from "../controllers/videoController";
 
 const videoRouther = express.Router();
 
-const handleWatchVideo = (req, res) => {
-    res.send("Watch Video");
-}
 
-videoRouther.get("/watch", handleWatchVideo);
+videoRouther.get("/watch", watch);
+videoRouther.get("/edit", edit);
 
 export default videoRouther;
