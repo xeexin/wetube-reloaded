@@ -1,4 +1,5 @@
 //const express = require("express");
+import "./db.js";
 import express from "express";
 import morgan from "morgan";
 
@@ -19,5 +20,5 @@ app.use("/", globalRouter);
 app.use("/users", usesrRouter);
 app.use("/videos", videoRouther);
 
-const handleListening = () => console.log(`✅ Server Listening on port http://localhost:${PORT} 👻`);
+const handleListening = () => console.log(`✅ Server listenting on http://localhost:${PORT} 🚀`);
 app.listen(4000, handleListening);
